@@ -1,0 +1,24 @@
+<owl-carousel [options]="carouselOptions" [items]="images" [carouselClasses]="['owl-theme', 'row', 'sliding']"> 
+    <div class="item" *ngFor="let image of images;let i= index">
+      <img class="slide-image img-fluid" src="{{image.image}}" >
+      <div class="carousel-caption">
+        <div class="caption vertical-center text-left">
+          <div class="big-text fadeInDown-1">
+              Save up to a<span class="big"><span class="sign">$</span>400</span>
+          </div>
+
+          <div class="excerpt fadeInDown-2">
+              on selected laptops<br>
+              & desktop pcs or<br>
+              smartphones
+          </div>
+          <div class="small fadeInDown-2">
+              terms and conditions apply
+          </div>
+          <div class="button-holder fadeInDown-3">
+              <a href="single-product.html" class="big le-button ">shop now</a>
+          </div>
+      </div><!-- /.caption -->
+      </div>
+    </div>
+  </owl-carousel>

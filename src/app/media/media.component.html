@@ -1,0 +1,266 @@
+<div id="top-banner-and-menu">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-4 col-md-3 sidemenu-holder">
+          <!-- ================================== TOP NAVIGATION ================================== -->
+          <div class="side-menu animate-dropdown">
+              <div class="head"><i class="fa fa-list"></i> all departments</div>
+              <nav class="yamm megamenu-horizontal navbar" role="navigation">
+                  <ul class="navbar-nav nav">
+                      <li class="nav-item menu-item" *ngFor="let media of medias">
+                          <a href="#" class="nav-link" data-toggle="dropdown">{{media.department}}</a>
+                          <ul class="dropdown-menu mega-menu">
+                              <li class="yamm-content">
+                                  <div class="row">
+                                      <div class="col-md-4">
+                                          <ul class="list-unstyled" *ngFor="">
+                                              <li><a href="index.html">{{Home}}</a></li>
+                                              
+                                          </ul>
+                                      </div>
+
+                                      <div class="col-md-4">
+                                          <ul class="list-unstyled">
+                                     
+                                          </ul>
+                                      </div>
+
+                                      <div class="col-md-4">
+                                          <ul class="list-unstyled">
+                                              
+                                          </ul>
+                                      </div>
+                                  </div>
+                              </li>
+                          </ul>
+                      </li>
+                      </ul> </nav>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-8 col-md-9 homebanner-holder">
+                      <!-- ========================================== SECTION – HERO ========================================= -->
+                      <app-slider></app-slider>    
+                      
+                          <!-- ========================================= SECTION – HERO : END ========================================= -->
+                      </div><!-- /.homebanner-holder -->
+                    </div>
+                  </div><!-- /.container -->
+              </div>
+               
+<section id="banner-holder" class="wow fadeInUp">
+              <div class="container">
+                <div class="row">
+                  <div class="col-xs-12 col-lg-6 no-margin banner">
+                      <a href="category-grid-2.html">
+                          <div class="banner-text theblue">
+                              <h1>New Life</h1>
+                              <span class="tagline">Introducing New Category</span>
+                          </div>
+                          <img class="banner-image" alt="" src="assets/images/banners/banner-narrow-01.jpg" data-echo="assets/images/banners/banner-narrow-01.jpg" />
+                      </a>
+                  </div>
+                  <div class="col-xs-12 col-lg-6 no-margin text-right banner">
+                      <a href="category-grid-2.html">
+                          <div class="banner-text right">
+                              <h1>Time &amp; Style</h1>
+                              <span class="tagline">Checkout new arrivals</span>
+                          </div>
+                          <img class="banner-image" alt="" src="assets/images/banners/banner-narrow-02.jpg" data-echo="assets/images/banners/banner-narrow-02.jpg" />
+                      </a>
+                  </div>
+                </div>
+              </div><!-- /.container -->
+          </section>
+          
+          <div id="products-tab" class="wow fadeInUp">
+              <div class="container">
+                  <div class="tab-holder">
+                      <!-- Nav tabs -->
+                      <ul class="nav nav-tabs" >
+                          <li class="active"><a href="#featured" data-toggle="tab">featured</a></li>
+                          <li><a href="#new-arrivals" data-toggle="tab">new arrivals</a></li>
+                          <li><a href="#top-sales" data-toggle="tab">top sales</a></li>
+                      </ul>
+                      <!-- Tab panes -->
+                      <div class="tab-content">
+                          <div class="tab-pane active" id="featured">
+                              <div class="product-grid-holder">
+                                <div class="row">
+                                  <div class="col-sm-4 col-md-3  no-margin product-item-holder hover" *ngFor="let shop of shops">
+                                      <div class="product-item">
+                                          <div class="ribbon red"><span>sale</span></div>
+                                          <div class="image">
+                                              <img alt="" src="{{shop.imageUrl}}" />
+                                          </div>
+                                          <div class="body">
+                                              <div class="label-discount green">-50% sale</div>
+                                              <div class="title">
+                                                  <a href="single-product.html">{{shop.name}}</a>
+                                              </div>
+                                              <div class="brand">{{shop.brand}}</div>
+                                          </div>
+                                          <div class="prices">
+                                              <div class="price-prev">{{shop.prevPrice}}</div>
+                                              <div class="price-current pull-right">{{shop.currPrice}}</div>
+                                          </div>
+
+                                          <div class="hover-area">
+                                              <div class="add-cart-button">
+                                                  <a href="single-product.html" class="le-button">add to cart</a>
+                                              </div>
+                                              <div class="wish-compare">
+                                                  <a class="btn-add-to-wishlist" href="#">add to wishlist</a>
+                                                  <a class="btn-add-to-compare" href="#">compare</a>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                </div>
+                                </div>
+                                <div class="loadmore-holder text-center">
+                                    <a class="btn-loadmore" href="#"><i class="fa fa-plus"></i>load more products</a>
+                                                 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- ========================================= BEST SELLERS ========================================= -->
+            <section id="bestsellers" class="color-bg wow fadeInUp">
+              <div class="container">
+                  <h1 class="section-title">Best Sellers</h1>
+<div class="row">
+  <div class="col-xs-12 col-md-7 no-margin">
+    <div class="row no-margin">
+      <div class="col-xs-12 col-sm-4 no-margin product-item-holder size-medium hover" *ngFor="let seller of sellers">
+        <div class="product-item">
+            <div class="image">
+                <img alt="" src="{{seller.imageUrl}}" />
+            </div>
+            <div class="body">
+                <div class="label-discount clear"></div>
+                <div class="title">
+                    <a href="single-product.html">{{seller.name}}</a>
+                </div>
+                <div class="brand">{{seller.brand}}</div>
+            </div>
+            <div class="prices">
+                <div class="price-current text-right">${{seller.currPrice}}</div>
+            </div>
+            <div class="hover-area">
+                <div class="add-cart-button">
+                    <a href="single-product.html" class="le-button">Add to cart</a>
+                </div>
+                <div class="wish-compare">
+                    <a class="btn-add-to-wishlist" href="#">Add to Wishlist</a>
+                    <a class="btn-add-to-compare" href="#">Compare</a>
+                </div>
+            </div>
+        </div>
+    </div><!-- /.product-item-holder -->
+    </div>
+  </div>
+  
+  <div class="col-xs-12 col-md-5 no-margin">
+    <div class="product-item-holder size-big single-product-gallery small-gallery">
+      <div id="best-seller-single-product-slider" class="single-product-slider">
+          <div class="single-product-gallery-item" id="slide1">
+              <a data-rel="prettyphoto" href="assets/images/products/product-gallery-01.jpg">
+                  <img alt="" src="assets/images/products/product-gallery-01.jpg"/>
+              </a>
+          </div>
+        </div>
+
+        <div class="gallery-thumbs clearfix">
+          <ul>
+              <li *ngFor="let slide of slides"><a class="horizontal-thumb active" data-target="#best-seller-single-product-slider" 
+                data-slide="0" href="#{{slide.id}}"><img alt="" src="{{slide.url}}"/></a></li>
+                </ul>
+      </div>
+      <div class="body">
+        <div class="label-discount clear"></div>
+        <div class="title">
+            <a href="single-product.html" style="font-size: 1.3rem !important">CPU intel core i5-4670k 3.4GHz BOX B82-12-122-41</a>
+        </div>
+        <div class="brand">sony</div>
+    </div>
+    
+    <div class="prices text-right">
+        <div class="price-current inline" style="font-size: 1.6rem !important">$1199.00</div>
+        <a href="cart.html" class="le-button big inline">add to cart</a>
+    </div>
+  </div>
+</div>
+               
+                </div>
+              </div>
+            </section>
+<!--recently viewed-->
+<section id="recently-reviewd" class="wow fadeInUp">
+    <div class="container">
+        <div class="carousel-holder hover">
+
+            <div class="title-nav">
+                <h2 class="h1">Recently Viewed</h2>
+                <div class="nav-holder">
+                    <a href="#prev" data-target="#owl-recently-viewed" class="slider-prev btn-prev fa fa-angle-left"></a>
+                    <a href="#next" data-target="#owl-recently-viewed" class="slider-next btn-next fa fa-angle-right"></a>
+                </div>
+            </div><!-- /.title-nav -->
+
+            <div id="owl-recently-viewed" class="product-grid-holder">
+                    <owl-carousel [options]="carouselOptions"  [carouselClasses]="['owl-theme', 'row']">
+                <div class="no-margin  product-item-holder size-small hover" *ngFor='let recent of recents'>
+                    <div class="product-item">
+                        <div class="ribbon red"><span>sale</span></div>
+                        <div class="image">
+                            <img alt="" src="{{recent.imageUrl}}" />
+                        </div>
+                        <div class="body">
+                            <div class="title">
+                                <a href="single-product.html">{{recent.name}}</a>
+                            </div>
+                            <div class="brand">{{recent.brand}}</div>
+                        </div>
+                        <div class="prices">
+                            <div class="price-current text-right">$({{recent.currPrice}})</div>
+                        </div>
+                        <div class="hover-area">
+                            <div class="add-cart-button">
+                                <a href="single-product.html" class="le-button">Add to Cart</a>
+                            </div>
+                            <div class="wish-compare">
+                                <a class="btn-add-to-wishlist" href="#">Add to Wishlist</a>
+                                <a class="btn-add-to-compare" href="#">Compare</a>
+                            </div>
+                        </div>
+                    </div><!-- /.product-item -->
+                </div>
+            </owl-carousel>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="top-brands" class="wow fadeInUp">
+            <div class="container">
+                <div class="carousel-holder" >
+
+                    <div class="title-nav">
+                        <h1>Top Brands</h1>
+                        <div class="nav-holder">
+                            <a href="#prev" data-target="#owl-brands" class="slider-prev btn-prev fa fa-angle-left"></a>
+                            <a href="#next" data-target="#owl-brands" class="slider-next btn-next fa fa-angle-right"></a>
+                        </div>
+                    </div><!-- /.title-nav -->
+                    <div id="owl-brands" class="brands-carousel">
+                    <app-brand></app-brand>
+                </div>
+                </div><!-- /.carousel-holder -->
+            </div><!-- /.container -->
+        </section><!-- /#top-brands -->
+        <!-- ========================================= TOP BRANDS : END ========================================= -->
+
+
+        
